@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spoiler Alert! | Gamu Mhere</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#f0fdf4', 100: '#dcfce7', 200: '#bbf7d0', 300: '#86efac',
+                            400: '#4ade80', 500: '#22c55e', 600: '#16a34a', 700: '#15803d',
+                            800: '#166534', 900: '#14532d', 950: '#052e16',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-amber-50 text-gray-800 font-sans leading-relaxed">
+
+    <custom-navbar></custom-navbar>
+
+    <main class="container mx-auto px-4 py-16 max-w-7xl">
+        
+        <a href="index.html#projects" class="inline-flex items-center text-primary-700 hover:text-primary-900 mb-10 text-lg font-medium transition-colors">
+            <i data-feather="arrow-left" class="w-5 h-5 mr-2"></i> Back to Projects
+        </a>
+
+        <header class="mb-20 border-b border-gray-200 pb-12">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
+                <div>
+                    <div class="flex items-center gap-6 mb-6">
+                        <div class="w-32 h-32 bg-white rounded-2xl shadow-md p-2 flex items-center justify-center border border-gray-100">
+                             <img src="images/spoileralert-logo.webp" alt="Spoiler Alert Logo" class="w-full h-full object-contain">
+                        </div>
+                        <h1 class="text-5xl md:text-6xl font-serif font-bold text-gray-900">
+                            Spoiler Alert!
+                        </h1>
+                    </div>
+                    <p class="text-2xl text-gray-600 max-w-3xl leading-relaxed">
+                        A secure, community-driven movie review platform with JSON-based data storage.
+                    </p>
+                </div>
+                
+                <a href="https://github.com/gamurrrrr/SpoilerAlert--movieReviewWebsite" target="_blank" class="flex items-center gap-3 bg-gray-900 text-white px-8 py-4 text-lg rounded-xl hover:bg-black transition shadow-md">
+                    <i data-feather="github" class="w-5 h-5"></i>
+                    View Source Code
+                </a>
+            </div>
+            
+            <div class="flex flex-wrap gap-4 mt-8">
+                <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-base font-medium">Python</span>
+                <span class="bg-yellow-100 text-yellow-800 px-4 py-2 rounded-full text-base font-medium">JSON Database</span>
+                <span class="bg-red-100 text-red-800 px-4 py-2 rounded-full text-base font-medium">Agile / Scrum</span>
+            </div>
+        </header>
+
+        <section class="mb-32">
+            <div class="grid md:grid-cols-2 gap-16 mb-12">
+                <div>
+                    <h3 class="text-3xl font-bold text-gray-900 mb-4">The Challenge</h3>
+                    <p class="text-xl text-gray-700 leading-relaxed">
+                        Building a review platform requires more than just displaying text. It needs secure user authentication, protection against bad actors (spam/harassment), and an efficient way to search through thousands of movie records.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-3xl font-bold text-gray-900 mb-4">The Solution</h3>
+                    <p class="text-xl text-gray-700 leading-relaxed">
+                        We built a Python-based application using a <strong>JSON database</strong> for flexibility. The system features Role-Based Access Control (Admin vs. User), Regex password security, and a robust search engine capable of filtering by genre, director, and actor.
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-gray-900 p-4 md:p-6 rounded-3xl shadow-2xl">
+                <div class="relative w-full aspect-video rounded-2xl overflow-hidden bg-black">
+                    <iframe 
+                        class="absolute top-0 left-0 w-full h-full"
+                        src="https://www.youtube.com/embed/eyD5-W-f6Sk?autoplay=1&mute=1&loop=1&playlist=eyD5-W-f6Sk&rel=0" 
+                        title="Project Demo" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="mt-4 flex items-center justify-between text-gray-400 text-base px-2">
+                    <span><i data-feather="play-circle" class="inline w-5 h-5 mr-2"></i> System Demo</span>
+                    <span>HD 1080p</span>
+                </div>
+            </div>
+        </section>
+
+     <section class="mb-32">
+            <h2 class="text-4xl font-bold text-gray-900 mb-16 flex items-center border-b border-gray-200 pb-6">
+                <i data-feather="shield" class="text-primary-600 w-10 h-10 mr-4"></i> System Architecture & User Flow
+            </h2>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center mb-24">
+                <div class="space-y-6">
+                    <h3 class="text-3xl font-bold text-gray-800">1. Secure Authentication</h3>
+                    <p class="text-xl text-gray-700 leading-relaxed">
+                        Security was a "High Priority" requirement. We implemented <strong>Regex Validation</strong> to enforce strong passwords (8+ chars, numbers, symbols) and encrypted storage to prevent data leaks.
+                    </p>
+                    <div class="bg-green-50 p-4 rounded-xl border border-green-100">
+                        <p class="font-medium text-green-800 flex items-center">
+                            <i data-feather="check-circle" class="w-5 h-5 mr-2"></i> Unique Username Validation
+                        </p>
+                        <p class="font-medium text-green-800 flex items-center mt-2">
+                            <i data-feather="check-circle" class="w-5 h-5 mr-2"></i> Password Encryption
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-3xl shadow-xl border border-gray-200 overflow-hidden p-2">
+                    <img src="images/spoileralert-login.png" alt="Secure Login Interface" class="w-full h-auto rounded-xl">
+                    <p class="text-center text-sm text-gray-500 mt-2 font-medium">Figure 1: Login Screen with Error Handling</p>
+                </div>
+            </div>
+
+            <div class="mb-24">
+                <div class="max-w-4xl mb-10">
+                    <h3 class="text-3xl font-bold text-gray-800 mb-4">2. Discovery & Personalization</h3>
+                    <p class="text-xl text-gray-700 leading-relaxed">
+                        Once authenticated, users can search the JSON database by Genre, Director, or Actor. They can also curate their own experience by saving movies to their <strong>"Favorites"</strong> list.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-white rounded-3xl shadow-xl border border-gray-200 overflow-hidden p-4">
+    <img src="images/spoileralert-home.png" alt="Home Search Interface" class="h-80 w-auto mx-auto rounded-xl object-contain">
+    <p class="text-center text-sm text-gray-500 mt-2 font-medium">Figure 2: Movie Search & Filtering</p>
+</div>
+
+                    <div class="bg-white rounded-3xl shadow-xl border border-gray-200 overflow-hidden p-2">
+                        <img src="images/spoileralert-profile.png" alt="User Profile and Favorites" class="w-full h-auto rounded-xl">
+                        <p class="text-center text-sm text-gray-500 mt-2 font-medium">Figure 3: User Profile & Favorites Collection</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="bg-white rounded-3xl shadow-xl border border-gray-200 overflow-hidden p-2 order-2 md:order-1">
+                    <img src="images/spoileralert-admin.png" alt="Admin Moderation Dashboard" class="w-full h-auto rounded-xl">
+                    <p class="text-center text-sm text-gray-500 mt-2 font-medium">Figure 4: Admin Moderation Dashboard</p>
+                </div>
+                
+                <div class="space-y-8 order-1 md:order-2">
+                    <h3 class="text-3xl font-bold text-gray-800">3. Admin Moderation</h3>
+                    <p class="text-xl text-gray-700 leading-relaxed">
+                        To maintain community safety, we built a dedicated <strong>Admin Dashboard</strong> separate from the standard user view.
+                    </p>
+                    <div class="bg-amber-50 p-6 rounded-2xl border border-amber-100">
+                        <h4 class="font-bold text-gray-900 mb-2">Admin Capabilities:</h4>
+                        <ul class="list-disc list-inside text-lg text-gray-700 space-y-2">
+                            <li>View list of reported/flagged reviews.</li>
+                            <li>Delete inappropriate content permanently.</li>
+                            <li>Grant or revoke privileges for other users.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-24">
+            <h2 class="text-4xl font-bold text-gray-900 mb-16 flex items-center border-b border-gray-200 pb-6">
+                <i data-feather="clipboard" class="text-primary-600 w-10 h-10 mr-4"></i> Agile Process & Traceability
+            </h2>
+
+            <div class="max-w-4xl mb-12">
+                <h3 class="text-3xl font-bold text-gray-800 mb-4">The Traceability Matrix</h3>
+                <p class="text-xl text-gray-700 leading-relaxed">
+                    We used a <strong>Requirements Traceability Matrix (RTM)</strong> to ensure every User Story was directly linked to a specific Test Case and a Pull Request (PR). This eliminated "scope creep" and ensured 100% test coverage for critical features like Account Creation and Review Deletion.
+                </p>
+            </div>
+
+           <div class="bg-white rounded-3xl shadow-xl border border-gray-200 overflow-hidden">
+                <iframe 
+                    src="https://docs.google.com/document/d/e/2PACX-1vTm5HvdaVvy1PLPYQHdpqr4Cf6DrV3u0LYwxzptSJOQKqhaf25oZmqd6EL2GWH9jtOKJORPU-MK7Y9-/pub?embedded=true" 
+                    class="w-full h-[800px] border-0"
+                    allowfullscreen>
+                </iframe>
+                
+                <div class="p-4 bg-gray-50 border-t border-gray-100 text-center">
+                    <p class="text-sm text-gray-500 font-medium">
+                        Live Document: Scroll to view full Traceability Matrix
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-24">
+            <h2 class="text-4xl font-bold text-gray-900 mb-12">Technical Implementation</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-md border border-gray-100">
+                    <i data-feather="database" class="text-primary-600 w-12 h-12 mb-6"></i>
+                    <h4 class="text-2xl font-bold text-gray-900 mb-4">JSON Database</h4>
+                    <p class="text-lg text-gray-600 leading-relaxed">Lightweight data storage allowing for fast retrieval of movie metadata and user reviews.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-md border border-gray-100">
+                    <i data-feather="search" class="text-primary-600 w-12 h-12 mb-6"></i>
+                    <h4 class="text-2xl font-bold text-gray-900 mb-4">Advanced Search</h4>
+                    <p class="text-lg text-gray-600 leading-relaxed">Search logic filters by Title, Genre, Director, or Actor, handling case-sensitivity errors.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-md border border-gray-100">
+                    <i data-feather="flag" class="text-primary-600 w-12 h-12 mb-6"></i>
+                    <h4 class="text-2xl font-bold text-gray-900 mb-4">Reporting System</h4>
+                    <p class="text-lg text-gray-600 leading-relaxed">Boolean-based flagging system allows users to report content, triggering Admin review.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <custom-footer></custom-footer>
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script>feather.replace();</script>
+</body>
+</html>

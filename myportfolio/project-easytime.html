@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyTime | Gamu Mhere</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#f0fdf4', 100: '#dcfce7', 200: '#bbf7d0', 300: '#86efac',
+                            400: '#4ade80', 500: '#22c55e', 600: '#16a34a', 700: '#15803d',
+                            800: '#166534', 900: '#14532d', 950: '#052e16',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-amber-50 text-gray-800 font-sans leading-relaxed">
+
+    <custom-navbar></custom-navbar>
+
+    <main class="container mx-auto px-4 py-16 max-w-7xl">
+        
+        <a href="index.html#projects" class="inline-flex items-center text-primary-700 hover:text-primary-900 mb-10 text-lg font-medium transition-colors">
+            <i data-feather="arrow-left" class="w-5 h-5 mr-2"></i> Back to Projects
+        </a>
+
+        <header class="mb-16 border-b border-gray-200 pb-12">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
+                <div>
+                    <div class="flex items-center gap-6 mb-6">
+                        <div class="w-24 h-24 bg-white rounded-2xl shadow-md p-2 flex items-center justify-center border border-gray-100">
+                            <img src="images/easy.png" alt="EasyTime Logo" class="w-full h-full object-contain">
+                        </div>
+                        <h1 class="text-5xl md:text-6xl font-serif font-bold text-gray-900">
+                            EasyTime
+                        </h1>
+                    </div>
+                    
+                    <p class="text-2xl text-gray-600 max-w-3xl leading-relaxed">
+                        Workforce Optimization and Operational Efficiency for Retail.
+                    </p>
+                </div>
+                
+                <a href="https://github.com/gamurrrrr/EasyTimeScheduling" target="_blank" class="flex items-center gap-3 bg-gray-900 text-white px-8 py-4 text-lg rounded-xl hover:bg-black transition shadow-md">
+                    <i data-feather="github" class="w-5 h-5"></i>
+                    View Source Code
+                </a>
+            </div>
+            
+            <div class="flex flex-wrap gap-4 mt-8">
+                <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-base font-medium">React + Vite</span>
+                <span class="bg-purple-100 text-purple-800 px-4 py-2 rounded-full text-base font-medium">Smartsheet</span>
+                <span class="bg-green-100 text-green-800 px-4 py-2 rounded-full text-base font-medium">Process Improvement</span>
+                <span class="bg-green-100 text-green-800 px-4 py-2 rounded-full text-base font-medium">Figma</span>
+                <span class="bg-green-100 text-green-800 px-4 py-2 rounded-full text-base font-medium">PMBOK</span>
+            </div>
+        </header>
+
+        <section class="mb-24">
+            <div class="grid md:grid-cols-2 gap-16 mb-12">
+                <div>
+                    <h3 class="text-3xl font-bold text-gray-900 mb-4">The Business Problem</h3>
+                    <p class="text-xl text-gray-700 leading-relaxed">
+                        While working in retail, I witnessed managers struggling with static spreadsheets to manage staff. This manual process led to communication errors, missed shifts, and inability to calculate payroll costs in real-time.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-3xl font-bold text-gray-900 mb-4">The Solution</h3>
+                    <p class="text-xl text-gray-700 leading-relaxed">
+                        I built EasyTime to move this workflow from static Excel sheets to a dynamic database. This centralizes scheduling, reduces admin time by ~40%, and eliminates payroll calculation errors.
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-gray-900 p-6 rounded-3xl shadow-2xl">
+                <div class="relative w-full aspect-video rounded-2xl overflow-hidden bg-black">
+                    <iframe 
+                        class="absolute top-0 left-0 w-full h-full"
+                        src="https://www.youtube.com/embed/kJcqeUBKRDk?autoplay=1&mute=1&loop=1&playlist=kJcqeUBKRDk&rel=0" 
+                        title="Project Demo" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="mt-4 flex items-center justify-between text-gray-400 text-base px-2">
+                    <span><i data-feather="play-circle" class="inline w-5 h-5 mr-2"></i> Live Project Demo</span>
+                    <span>HD 1080p</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-24">
+            <h2 class="text-4xl font-bold text-gray-900 mb-12 flex items-center">
+                <i data-feather="trello" class="text-primary-600 w-10 h-10 mr-4"></i> Project Management & Strategy
+            </h2>
+
+            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                <div class="space-y-8">
+                    <h3 class="text-2xl font-bold text-gray-800">1. Defining Scope & Timeline</h3>
+                    <p class="text-xl text-gray-700 leading-relaxed">
+                        Using a <strong>Gantt Chart</strong>, I broke the project down into 6 distinct milestones, from "Project Charter Acceptance" to "Final Product Signoff." This allowed us to identify critical path dependencies, such as ensuring the Backend API was fully tested before Front-end integration began.
+                    </p>
+                    <div class="bg-white rounded-2xl shadow-lg border border-gray-200">
+                        <img src="images/gantt.png" alt="Project Gantt Chart" class="w-full h-auto rounded-xl border border-gray-100">
+                        <p class="text-center text-base text-gray-500 mt-3 font-medium">Figure 1: Work Breakdown Structure (WBS) & Timeline</p>
+                    </div>
+                </div>
+
+                <div class="space-y-8">
+                    <h3 class="text-2xl font-bold text-gray-800">2. Risk Management & Pivots</h3>
+                    <p class="text-xl text-gray-700 leading-relaxed">
+                        Mid-project, we faced a critical resource risk: a key backend developer was unavailable, putting 47% of tasks at risk.
+                    </p>
+                    <div class="bg-red-50 border-l-8 border-red-500 p-6 rounded-r-xl">
+                        <h4 class="font-bold text-red-800 text-lg mb-2">Strategic Decision: Scope Reduction</h4>
+                        <p class="text-lg text-red-900 leading-relaxed">
+                            To save the release deadline, I formally proposed a <strong>Change in Scope</strong>. We moved "Exporting Features" (CSV/PDF) to low priority to focus resources on the core backend functionality.
+                        </p>
+                    </div>
+                    <div class="bg-white rounded-2xl shadow-lg border border-gray-200 mt-6">
+                        <img src="images/dashboard.png" alt="Smartsheet Dashboard" class="w-full h-auto rounded-xl border border-gray-100">
+                        <p class="text-center text-base text-gray-500 mt-3 font-medium">Figure 2: Weekly Status Dashboard tracking Risks & Decisions</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-24">
+            <h2 class="text-4xl font-bold text-gray-900 mb-12">Technical Implementation</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-md border border-gray-100">
+                    <i data-feather="users" class="text-primary-600 w-10 h-10 mb-6"></i>
+                    <h4 class="text-2xl font-bold text-gray-900 mb-4">Role-Based Access</h4>
+                    <p class="text-lg text-gray-600 leading-relaxed">Implemented distinct views for "Employer" vs "Employee," restricting sensitive payroll data to authorized accounts only.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-md border border-gray-100">
+                    <i data-feather="database" class="text-primary-600 w-10 h-10 mb-6"></i>
+                    <h4 class="text-2xl font-bold text-gray-900 mb-4">Data Integrity</h4>
+                    <p class="text-lg text-gray-600 leading-relaxed">Built a MySQL database to handle complex relationships between Users, Shifts, and Pay Rates.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-md border border-gray-100">
+                    <i data-feather="layout" class="text-primary-600 w-10 h-10 mb-6"></i>
+                    <h4 class="text-2xl font-bold text-gray-900 mb-4">Modern UI/UX</h4>
+                    <p class="text-lg text-gray-600 leading-relaxed">Designed in Figma and built with React for a responsive, clean user interface.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <custom-footer></custom-footer>
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script>feather.replace();</script>
+</body>
+</html>

@@ -35,31 +35,41 @@
     <custom-navbar></custom-navbar>
     
     <main class="container mx-auto px-4 py-12 md:py-24">
-        <section class="grid md:grid-cols-2 gap-12 items-center mb-24">
-            <div class="space-y-6">
-                <h1 class="text-5xl md:text-6xl font-serif font-bold tracking-tight">
+       <section class="grid md:grid-cols-2 gap-12 items-center mb-24">
+            <div class="space-y-8"> <h1 class="text-6xl md:text-8xl font-serif font-bold tracking-tight leading-tight">
                     <span class="text-primary-700">Gamu Mhere</span>
                 </h1>
-                <h2 class="text-2xl md:text-3xl font-light text-gray-600">
+                
+                <h2 class="text-3xl md:text-4xl font-light text-gray-600">
                     Bridging Computer Science & Business Strategy
                 </h2>
-                <p class="text-lg text-gray-700 leading-relaxed">
-                    3rd Year B.Sc. Computer Science student (Minor in Psychology) at UBC. I combine technical data skills with an understanding of user behavior to drive operational efficiency and digital transformation.
+                
+                <p class="text-xl text-gray-700 leading-relaxed max-w-lg">
+                    3rd Year B.Sc. Computer Science student (Minor in Psychology) at UBC. I combine technical data skills with an understanding of user behavior to drive operational efficiency.
                 </p>
-                <div class="flex space-x-4">
-                    <a href="#projects" class="px-6 py-3 bg-primary-600 hover:bg-primary-700 text-white rounded-lg transition-all duration-300 shadow-md hover:shadow-lg">
+                
+                <div class="flex flex-wrap gap-4">
+                    <a href="#projects" class="px-8 py-4 text-lg bg-primary-600 hover:bg-primary-700 text-white rounded-xl transition-all duration-300 shadow-md hover:shadow-lg flex items-center gap-2 font-semibold">
                         View Projects
                     </a>
-                    <a href="#contact" class="px-6 py-3 border border-primary-600 text-primary-600 hover:bg-primary-50 rounded-lg transition-all duration-300">
-                        Contact Me
+
+                    <a href="resume.pdf" target="_blank" class="px-8 py-4 text-lg border-2 border-primary-600 text-primary-600 hover:bg-primary-50 rounded-xl transition-all duration-300 flex items-center gap-2 shadow-sm font-semibold">
+                        <i data-feather="file-text" class="w-5 h-5"></i>
+                        Resume
+                    </a>
+
+                    <a href="#contact" class="px-8 py-4 text-lg border-2 border-primary-600 text-primary-600 hover:bg-primary-50 rounded-xl transition-all duration-300 flex items-center gap-2 shadow-sm font-semibold">
+                        <i data-feather="mail" class="w-5 h-5"></i>
+                        Contact
                     </a>
                 </div>
             </div>
+            
             <div class="relative">
                 <div class="absolute -inset-8 bg-primary-100 rounded-2xl -z-10 rotate-3"></div>
                 <div class="rounded-xl overflow-hidden shadow-xl">
-    <img src="images/profile.jpeg" alt="Gamu Mhere" class="w-full h-auto object-cover">
-</div>
+                    <img src="images/profile.jpeg" alt="Gamu Mhere" class="w-full h-auto object-cover">
+                </div>
             </div>
         </section>
 
@@ -76,7 +86,7 @@
                     </div>
                     <h3 class="text-xl font-semibold mb-3">Education</h3>
                     <p class="text-gray-600">
-                        Senior CS student at UBC Okanagan. Coursework includes Data Science, Databases, Data Analytics Software Engineering, Human Computer Interaction and Project Management.
+                        Senior CS student at UBC Okanagan with an expected graduation date of <strong>May 2027</strong>. Coursework includes Data Science, Databases, Data Analytics, Human Computer Interaction, Project Management,Software Engineering,  and Statistics.
                     </p>
                 </div>
                 <div class="bg-white p-8 rounded-xl shadow-md border-t-4 border-primary-500">
@@ -85,7 +95,7 @@
                     </div>
                     <h3 class="text-xl font-semibold mb-3">Experience</h3>
                     <p class="text-gray-600">
-                        Hands-on experience in retail operations, using inventory systems to track product movement and identifying inefficiencies in staff scheduling.
+                        Hands-on experience in retail operations, using inventory systems to track product movement and identifying inefficiencies in staff scheduling, as well as customer service excellence.
                     </p>
                 </div>
                 <div class="bg-white p-8 rounded-xl shadow-md border-t-4 border-primary-500">
@@ -128,71 +138,90 @@
 </a>
     </div>
 </div>
-                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col h-full">
                     <div class="h-48 bg-primary-100 flex items-center justify-center">
                         <i data-feather="clock" class="w-16 h-16 text-primary-600"></i>
                     </div>
-                    <div class="p-6">
+                    <div class="p-6 flex flex-col flex-grow">
                         <h3 class="text-xl font-semibold mb-2">EasyTime: Workforce Optimization and Operational Efficiency</h3>
-                        <p class="text-gray-600 mb-4">
+                        <p class="text-gray-600 mb-4 flex-grow">
                             EasyTime is a web-based staff scheduling and time-tracking app designed for small businesses, inspired by the scheduling inefficiencies I noticed while working in retail. It simplifies creating and managing employee schedules, clock-ins, and availability while providing features like shift swaps, payroll estimates, and exportable summaries, all in one modern, intuitive interface.
                         </p>
-                        <div class="flex flex-wrap gap-2 mb-4">
+                        <div class="flex flex-wrap gap-2 mb-6">
                             <span class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-sm">Smartsheet</span>
                             <span class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-sm">Figma</span>
-                            <span class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-sm">Process Improvement</span> 
-                             <span class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-sm">REACT+Vite</span> 
+                            <span class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-sm">Process Improvement</span>
+                            <span class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-sm">REACT+Vite</span>
                         </div>
-                        <a href="https://github.com/gamurrrrr" class="text-primary-600 hover:text-primary-800 font-medium inline-flex items-center">
-                            View on GitHub
-                            <i data-feather="arrow-right" class="w-4 h-4 ml-2"></i>
-                        </a>
+                        
+                        <div class="flex gap-3 mt-auto">
+                            <a href="https://github.com/gamurrrrr/EasyTimeScheduling" target="_blank" class="flex-1 flex items-center justify-center gap-2 bg-gray-800 hover:bg-black text-white py-2 px-4 rounded-lg text-sm font-medium transition-colors">
+                                <i data-feather="github" class="w-4 h-4"></i>
+                                Source Code
+                            </a>
+                            <a href="project-easytime.html" class="flex-1 flex items-center justify-center gap-2 bg-primary-50 hover:bg-primary-100 text-primary-700 py-2 px-4 rounded-lg text-sm font-medium transition-colors border border-primary-200">
+                                <i data-feather="layout" class="w-4 h-4"></i>
+                                Project Brief
+                            </a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col h-full">
                     <div class="h-48 bg-primary-100 flex items-center justify-center">
                         <i data-feather="shopping-cart" class="w-16 h-16 text-primary-600"></i>
                     </div>
-                    <div class="p-6">
+                    <div class="p-6 flex flex-col flex-grow">
                         <h3 class="text-xl font-semibold mb-2">Local Roots: Direct-to-Consumer Marketplace</h3>
-                        <p class="text-gray-600 mb-4">
+                        <p class="text-gray-600 mb-4 flex-grow">
                             Identified the difficulties the average consumer faces in trying to connect with local farmers to buy fresh, affordable produce and so developed a mobile marketplace connecting local farmers with consumers. Features include secure account management, product cart logic, and geolocation mapping.
                         </p>
-                        <div class="flex flex-wrap gap-2 mb-4">
+                        <div class="flex flex-wrap gap-2 mb-6">
                             <span class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-sm">Android Studio</span>
                             <span class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-sm">Java</span>
                             <span class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-sm">Product Design</span>
-                            
                         </div>
-                        <a href="https://github.com/gamurrrrr" class="text-primary-600 hover:text-primary-800 font-medium inline-flex items-center">
-                            View on GitHub
-                            <i data-feather="arrow-right" class="w-4 h-4 ml-2"></i>
-                        </a>
+
+                        <div class="flex gap-3 mt-auto">
+                            <a href="https://github.com/gamurrrrr/COSC341-Local-Roots" target="_blank" class="flex-1 flex items-center justify-center gap-2 bg-gray-800 hover:bg-black text-white py-2 px-4 rounded-lg text-sm font-medium transition-colors">
+                                <i data-feather="github" class="w-4 h-4"></i>
+                                Source Code
+                            </a>
+                            <a href="project-localroots.html" class="flex-1 flex items-center justify-center gap-2 bg-primary-50 hover:bg-primary-100 text-primary-700 py-2 px-4 rounded-lg text-sm font-medium transition-colors border border-primary-200">
+                                <i data-feather="layout" class="w-4 h-4"></i>
+                                Project Brief
+                            </a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col h-full">
                     <div class="h-48 bg-primary-100 flex items-center justify-center">
                         <i data-feather="film" class="w-16 h-16 text-primary-600"></i>
                     </div>
-                    <div class="p-6">
+                    <div class="p-6 flex flex-col flex-grow">
                         <h3 class="text-xl font-semibold mb-2">SpoilerAlert!: Dataset Exploration, Cleaning and Trend Analysis</h3>
-                        <p class="text-gray-600 mb-4">
+                        <p class="text-gray-600 mb-4 flex-grow">
                             Built a movie review platform that utilizes Docker for containerization and JSON for data handling to ensure seamless user review submissions. The site lets users read and write movie reviews, and interact through likes and comments. It includes a Python script that imports a Kaggle IMDb-style dataset into a structured JSON database containing movie metadata and over 47,000 user reviews.
                         </p>
-                        <div class="flex flex-wrap gap-2 mb-4">
+                        <div class="flex flex-wrap gap-2 mb-6">
                             <span class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-sm">Python</span>
                             <span class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-sm">Docker</span>
                             <span class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-sm">JSON</span>
                         </div>
-                        <a href="https://github.com/gamurrrrr" class="text-primary-600 hover:text-primary-800 font-medium inline-flex items-center">
-                            View on GitHub
-                            <i data-feather="arrow-right" class="w-4 h-4 ml-2"></i>
-                        </a>
+
+                        <div class="flex gap-3 mt-auto">
+                            <a href="https://github.com/gamurrrrr/SpoilerAlert--movieReviewWebsite" target="_blank" class="flex-1 flex items-center justify-center gap-2 bg-gray-800 hover:bg-black text-white py-2 px-4 rounded-lg text-sm font-medium transition-colors">
+                                <i data-feather="github" class="w-4 h-4"></i>
+                                Source Code
+                            </a>
+                            <a href="project-spoileralert.html" class="flex-1 flex items-center justify-center gap-2 bg-primary-50 hover:bg-primary-100 text-primary-700 py-2 px-4 rounded-lg text-sm font-medium transition-colors border border-primary-200">
+                                <i data-feather="layout" class="w-4 h-4"></i>
+                                Project Brief
+                            </a>
+                        </div>
                     </div>
                 </div>
-
             </div>
         </section>
 
@@ -208,7 +237,7 @@
                     <ul class="space-y-3">
                         <li class="flex items-start">
                             <i data-feather="check" class="w-5 h-5 text-primary-600 mt-0.5 mr-2"></i>
-                            <span>SQL & MySQL </span>
+                            <span>SQL</span>
                         </li>
                         <li class="flex items-start">
                             <i data-feather="check" class="w-5 h-5 text-primary-600 mt-0.5 mr-2"></i>
@@ -216,7 +245,7 @@
                         </li>
                         <li class="flex items-start">
                             <i data-feather="check" class="w-5 h-5 text-primary-600 mt-0.5 mr-2"></i>
-                            <span>RStudio </span>
+                            <span>HTML </span>
                         </li>
                         <li class="flex items-start">
                             <i data-feather="check" class="w-5 h-5 text-primary-600 mt-0.5 mr-2"></i>
@@ -229,11 +258,11 @@
                     <ul class="space-y-3">
                         <li class="flex items-start">
                             <i data-feather="check" class="w-5 h-5 text-primary-600 mt-0.5 mr-2"></i>
-                            <span>Microsoft Suite (Excel, Word, PowerPoint)</span>
+                            <span>Microsoft Suite (Excel, Word, PowerPoint, Sheets)</span>
                         </li>
                         <li class="flex items-start">
                             <i data-feather="check" class="w-5 h-5 text-primary-600 mt-0.5 mr-2"></i>
-                            <span>Jira</span>
+                            <span>MySQL</span>
                         </li>
                         <li class="flex items-start">
                             <i data-feather="check" class="w-5 h-5 text-primary-600 mt-0.5 mr-2"></i>
@@ -245,7 +274,7 @@
                         </li>
                          <li class="flex items-start">
                             <i data-feather="check" class="w-5 h-5 text-primary-600 mt-0.5 mr-2"></i>
-                            <span>Tableau </span>
+                            <span>RStudio </span>
                         </li>
                     </ul>
                 </div>
@@ -312,7 +341,7 @@
                             From Zimbabwe to Canada
                         </h3>
                         <p class="text-gray-600 leading-relaxed">
-                            Moving to Canada as an international student mastered my ability to adapt quickly to new environments. I bring this same global perspective and resilience to every business challenge I tackle.
+                            Moving to Canada as an international student enforced my ability to adapt quickly to new environments. I bring this same global perspective and resilience to every business challenge I tackle.
                         </p>
                     </div>
 

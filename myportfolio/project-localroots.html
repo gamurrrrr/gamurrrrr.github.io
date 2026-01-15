@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Roots | Gamu Mhere</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#f0fdf4', 100: '#dcfce7', 200: '#bbf7d0', 300: '#86efac',
+                            400: '#4ade80', 500: '#22c55e', 600: '#16a34a', 700: '#15803d',
+                            800: '#166534', 900: '#14532d', 950: '#052e16',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-amber-50 text-gray-800 font-sans leading-relaxed">
+
+    <custom-navbar></custom-navbar>
+
+    <main class="container mx-auto px-4 py-16 max-w-7xl">
+        
+        <a href="index.html#projects" class="inline-flex items-center text-primary-700 hover:text-primary-900 mb-10 text-lg font-medium transition-colors">
+            <i data-feather="arrow-left" class="w-5 h-5 mr-2"></i> Back to Projects
+        </a>
+
+        <header class="mb-20 border-b border-gray-200 pb-12">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
+                <div>
+                    <div class="flex items-center gap-6 mb-6">
+                        <div class="w-32 h-32 bg-white rounded-2xl shadow-md p-2 flex items-center justify-center border border-gray-100">
+                            <img src="images/localroots-logo.jpg" alt="Local Roots Logo" class="w-full h-full object-contain">
+                        </div>
+                        <h1 class="text-5xl md:text-6xl font-serif font-bold text-gray-900">
+                            Local Roots
+                        </h1>
+                    </div>
+                    <p class="text-2xl text-gray-600 max-w-3xl leading-relaxed">
+                        A Direct-to-Consumer Marketplace connecting local farmers with urban buyers.
+                    </p>
+                </div>
+                
+                <a href="https://github.com/gamurrrrr/COSC341-Local-Roots" target="_blank" class="flex items-center gap-3 bg-gray-900 text-white px-8 py-4 text-lg rounded-xl hover:bg-black transition shadow-md">
+                    <i data-feather="github" class="w-5 h-5"></i>
+                    View Source Code
+                </a>
+            </div>
+            
+            <div class="flex flex-wrap gap-4 mt-8">
+                <span class="bg-green-100 text-green-800 px-4 py-2 rounded-full text-base font-medium">Android Studio</span>
+                <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-base font-medium">Java</span>
+                <span class="bg-purple-100 text-purple-800 px-4 py-2 rounded-full text-base font-medium">UX Research</span>
+            </div>
+        </header>
+
+        <section class="mb-32">
+            <div class="grid md:grid-cols-2 gap-16 mb-12">
+                <div>
+                    <h3 class="text-3xl font-bold text-gray-900 mb-4">The Supply Chain Gap</h3>
+                    <p class="text-xl text-gray-700 leading-relaxed">
+                        The average consumer faces high barriers when trying to buy fresh produce: opaque pricing, inconvenient logistics, and lack of discovery. Small farmers lack the digital infrastructure to reach these buyers.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-3xl font-bold text-gray-900 mb-4">The Platform Solution</h3>
+                    <p class="text-xl text-gray-700 leading-relaxed">
+                        Local Roots is a two-sided marketplace. It simplifies inventory management for farmers while providing consumers with a location-based discovery tool to find fresh food within their community.
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-gray-900 p-4 md:p-6 rounded-3xl shadow-2xl">
+                <div class="relative w-full aspect-video rounded-2xl overflow-hidden bg-black">
+                    <iframe 
+                        class="absolute top-0 left-0 w-full h-full"
+                        src="https://www.youtube.com/embed/0VgxnaXispQ?autoplay=1&mute=1&loop=1&playlist=0VgxnaXispQ&rel=0" 
+                        title="Project Demo" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="mt-4 flex items-center justify-between text-gray-400 text-base px-2">
+                    <span><i data-feather="play-circle" class="inline w-5 h-5 mr-2"></i> App Demo</span>
+                    <span>Android Emulation</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-32">
+            <h2 class="text-4xl font-bold text-gray-900 mb-16 flex items-center border-b border-gray-200 pb-6">
+                <i data-feather="search" class="text-primary-600 w-10 h-10 mr-4"></i> User Research
+            </h2>
+
+            <div class="mb-24">
+                <div class="max-w-4xl mb-10">
+                    <h3 class="text-3xl font-bold text-gray-800 mb-4">Market Validation</h3>
+                    <p class="text-xl text-gray-700 leading-relaxed">
+                        We surveyed 10 Kelowna locals (a mix of farmers and consumers) via Google Forms to validate our technical approach. The data provided a clear directive: build a mobile-first experience that handles spotty connectivity.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-3xl shadow-xl border border-gray-200 overflow-hidden">
+                    <div class="p-8 md:p-12">
+                        <div class="grid md:grid-cols-2 gap-12 items-center">
+                            <div class="text-center md:text-left border-b md:border-b-0 md:border-r border-gray-100 pb-8 md:pb-0 md:pr-8">
+                                <span class="block text-6xl md:text-8xl font-bold text-primary-600 mb-2">100%</span>
+                                <h4 class="text-2xl font-bold text-gray-900 mb-2">Mobile Preference</h4>
+                                <p class="text-gray-600 text-lg">
+                                    of respondents explicitly preferred a <strong>Mobile App</strong> over a web-based platform.
+                                </p>
+                            </div>
+                            <div>
+                                <h5 class="font-bold text-gray-900 mb-6 text-lg">Top User Priorities:</h5>
+                                <div class="mb-6">
+                                    <div class="flex justify-between text-sm font-medium text-gray-600 mb-2">
+                                        <span>Need for Offline Support</span>
+                                        <span>89%</span>
+                                    </div>
+                                    <div class="w-full bg-gray-100 rounded-full h-4">
+                                        <div class="bg-primary-500 h-4 rounded-full" style="width: 89%"></div>
+                                    </div>
+                                </div>
+                                <div class="mb-6">
+                                    <div class="flex justify-between text-sm font-medium text-gray-600 mb-2">
+                                        <span>Prioritize Product Info</span>
+                                        <span>87%</span>
+                                    </div>
+                                    <div class="w-full bg-gray-100 rounded-full h-4">
+                                        <div class="bg-primary-400 h-4 rounded-full" style="width: 87%"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="flex justify-between text-sm font-medium text-gray-600 mb-2">
+                                        <span>Direct Farmer Messaging</span>
+                                        <span>86%</span>
+                                    </div>
+                                    <div class="w-full bg-gray-100 rounded-full h-4">
+                                        <div class="bg-primary-300 h-4 rounded-full" style="width: 86%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="max-w-4xl mb-10">
+                    <h3 class="text-3xl font-bold text-gray-800 mb-4">2. User Personas</h3>
+                    <p class="text-xl text-gray-700 leading-relaxed">
+                        Based on our interviews, we synthesized two key personas to guide our design decisions: The "Time-Poor Urban Professional" seeking convenience, and the "Small-Scale Grower" needing simple digital tools. These personas guided every UI decision to ensure we solved real human problems.
+                    </p>
+                </div>
+            
+            <div class="bg-white rounded-3xl shadow-xl border border-gray-200 overflow-hidden p-4">
+                <img src="images/persona.png" alt="User Personas" class="w-full h-auto rounded-xl">
+                <p class="text-center text-lg text-gray-500 mt-4 font-medium">Figure 1: User Personas</p>
+            </div>
+        </section>
+
+        <section class="mb-32">
+            <h2 class="text-4xl font-bold text-gray-900 mb-12 flex items-center border-b border-gray-200 pb-6">
+                <i data-feather="smartphone" class="text-primary-600 w-10 h-10 mr-4"></i> App Interface Design
+            </h2>
+            
+            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-3">Simplicity & Visibility</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        The interface prioritizes minimal visual clutter. The "Explore Farms" (Map) and "Farm Details" screens are designed so users can identify local sources within seconds.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-3">Safety & Constraints</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Strict logic constraints prevent user error. The Login system separates Buyer/Seller data, and the Cart class automatically handles inventory reservation logic to prevent overselling.
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-gray-100 rounded-3xl p-8 md:p-12 border border-gray-200">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 items-start">
+                    
+                    <div class="flex flex-col items-center group">
+                        <div class="relative w-full rounded-[2rem] overflow-hidden shadow-xl border-[6px] border-gray-800 bg-black transition-transform duration-300 group-hover:-translate-y-2">
+                            <img src="images/localroots-login.png" alt="Login Screen" class="w-full h-auto block">
+                        </div>
+                        <p class="text-gray-500 font-bold mt-4 text-sm uppercase tracking-wide">1. Secure Login</p>
+                    </div>
+
+                    <div class="flex flex-col items-center group">
+                        <div class="relative w-full rounded-[2rem] overflow-hidden shadow-xl border-[6px] border-gray-800 bg-black transition-transform duration-300 group-hover:-translate-y-2">
+                            <img src="images/localroots-map.png" alt="Map Interface" class="w-full h-auto block">
+                        </div>
+                        <p class="text-gray-500 font-bold mt-4 text-sm uppercase tracking-wide">2. Discovery Map</p>
+                    </div>
+
+                    <div class="flex flex-col items-center group">
+                        <div class="relative w-full rounded-[2rem] overflow-hidden shadow-xl border-[6px] border-gray-800 bg-black transition-transform duration-300 group-hover:-translate-y-2">
+                            <img src="images/localroots-list.png" alt="Farm List" class="w-full h-auto block">
+                        </div>
+                        <p class="text-gray-500 font-bold mt-4 text-sm uppercase tracking-wide">3. Farm List</p>
+                    </div>
+
+                    <div class="flex flex-col items-center group">
+                        <div class="relative w-full rounded-[2rem] overflow-hidden shadow-xl border-[6px] border-gray-800 bg-black transition-transform duration-300 group-hover:-translate-y-2">
+                            <img src="images/localroots-details.png" alt="Farm Details" class="w-full h-auto block">
+                        </div>
+                        <p class="text-gray-500 font-bold mt-4 text-sm uppercase tracking-wide">4. Farm Details</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-24">
+            <h2 class="text-4xl font-bold text-gray-900 mb-12">Technical Implementation</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-md border border-gray-100">
+                    <i data-feather="map-pin" class="text-primary-600 w-12 h-12 mb-6"></i>
+                    <h4 class="text-2xl font-bold text-gray-900 mb-4">Geolocation Logic</h4>
+                    <p class="text-lg text-gray-600 leading-relaxed">Filtered database results to show produce within a specific radius.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-md border border-gray-100">
+                    <i data-feather="code" class="text-primary-600 w-12 h-12 mb-6"></i>
+                    <h4 class="text-2xl font-bold text-gray-900 mb-4">Java Classes</h4>
+                    <p class="text-lg text-gray-600 leading-relaxed">Built robust models for Cart, User, and Product state management.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-md border border-gray-100">
+                    <i data-feather="database" class="text-primary-600 w-12 h-12 mb-6"></i>
+                    <h4 class="text-2xl font-bold text-gray-900 mb-4">Data Persistence</h4>
+                    <p class="text-lg text-gray-600 leading-relaxed">Used SharedPreferences and local caching for offline capabilities.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <custom-footer></custom-footer>
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script>feather.replace();</script>
+</body>
+</html>
